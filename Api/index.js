@@ -12,6 +12,11 @@ app.use("/api/v1",feedbackRoute)//mounting
 app.get("/",(req,res)=>{
  res.send("Company Feedback System");
 })
+
+app.get("/",(req,res)=>{
+res.send("hello");
+})
+
 const PORT=process.env.PORT||3000;
 app.listen(PORT,()=>{
  console.log(`Server is running at port: ${PORT}`);
